@@ -14,15 +14,21 @@ Like the terminal, but for JavaScript.
 
 **JS statements always end in a semicolon ( ; )**
 
-`ex. var firstName = 'Simon';`
+```javascript
+var firstName = 'Simon';
+```
 
-`console.log();`
+```javascript
+console.log();
+```
 
 Running this statement will output (log) something to your JS console.
 
-`console.log('Hello!');`
+```javascript
+console.log('Hello!');
 
-`console.log(4+4);`
+console.log( 4 + 4 );
+```
 
 **Exercise Time!**
 
@@ -30,9 +36,9 @@ Running this statement will output (log) something to your JS console.
 
 Think of variables as a storage box for a particular value. If you have a piece of data, create a variable to store that data in.
 
-Whenever you set something using "=" you are **DEFINING** it. 
+- Whenever you set something using "=" you are **DEFINING** it. 
 
-Whenever you put "//" in JS code you are adding a **comment**.
+- Whenever you put "//" in JS code you are adding a **comment**.
 
 ```javascript
 var name = 'Tom Smith';
@@ -92,11 +98,13 @@ undefined, null, +0, -0, NaN, ''
 
 ### Arrays
 
-A way to store multiple pieces of data and preserves the order in which they are stored. Can also quickly determine how many items there are in the array.
+A way to store multiple pieces of data. Can also quickly determine how many items there are in the array.
 
-**Arrays are good for storing multiple values of the same kind.**
+- **Arrays preserve the order in which the data is stored**
 
-Arrays always use **[ ]**
+- **Arrays are good for storing multiple values of the same kind.**
+
+- Arrays always use **[ ]**
 
 ```javascript
 var classmates1 = ['Cassie', 'Clement', 'Dale', 'Dennis', 'Dow', 'Vivienne'];
@@ -123,21 +131,21 @@ classmates1.length; 			// returns 6
 
 ### Objects
 
-Think of objects as **things**. A car is an object. A person is an object. Objects have **properties**, which we call **keys**. A **key** point to a **value**.
+Think of objects as **things**. A car is an object. A person is an object. Objects have **properties**, which we call **keys**. A **key** points to a **value**.
 
 **Important**: a single **value** isn't always a single piece of data like one number or one string. It can be an entire array or an entire object or even a function.
 
 **{key: value}** pairs
 
-A key can be a single word or multiple words separated by spaces, but if they're multiple words with spaces they must be in ' ' .
+- A key can be a single word or multiple words separated by spaces, **but if they're multiple words with spaces they must be in ' ' **.
 
-Objects always use **{ }**
+- Objects always use **{ }** and **keys always have a colon (:) immediately after it**
 
-Objects do NOT preserve any order.
+- Objects do NOT preserve any order.
 
-Objects are often also called **"hashes"** (not the same as the # symbol).
+- Objects are often also called **"hashes"** (not the same as the # symbol).
 
-**Objects are used for storing single/multiple different properties of a thing or a class of thing.**
+- **Objects are used for storing single/multiple different properties of a thing or a class of thing.**
  
 ```javascript
 var tom = {
@@ -187,6 +195,7 @@ You grab array values via their index. Indexes always start at 0 for the first i
 var classmates = ['Cassie', 'Clement', 'Dale', 'Dennis', 'Dow', 'Vivienne'];
 
 classmates[1]; // will be the string 'Clement'
+classmates[0]; // will be the string 'Cassie'
 ```
 ### Objects
 
@@ -201,7 +210,7 @@ var person = {
 	'nick name': 'Boo'
 };
 ```
-There are two ways to reference a key:
+## There are two ways to reference a key:
 
 **Dot Notation:**
 
@@ -222,7 +231,7 @@ person.['nick name'];   // will be the string 'Boo'
 
 **Exercise Time! - create objects and arrays and access their values**
 
-## Mixing Objects into Arrays and Vice Versa
+## Nesting Objects into Arrays and Vice Versa
 
 ```javascript
 var subaruImpreza = {
