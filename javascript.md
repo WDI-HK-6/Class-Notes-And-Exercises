@@ -1,8 +1,8 @@
 # JavaScript
 
-JavaScript is a programming language that primarily does client-side functionality. Examples of front-end JS frameworks and libraries are *jQuery* and *AngularJS*.
+JavaScript is a programming language that primarily does client-side functionality. Examples of front-end JS libraries and frameworks are **jQuery** and **AngularJS**, respectively.
 
-JavaScript can also be used for the server-side. *NodeJS* is an example of a JS platform used for server-side functionality.
+JavaScript can also be used for the server-side. **NodeJS** is an example of a JS platform used for server-side functionality.
 
 ## Javascript Console
 
