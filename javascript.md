@@ -2,13 +2,15 @@
 
 JavaScript is a programming language that primarily does client-side functionality. Examples of front-end JS libraries and frameworks are **jQuery** and **AngularJS**, respectively.
 
-JavaScript can also be used for the server-side. **NodeJS** is an example of a JS platform used for server-side functionality.
+JavaScript can also be used for the server-side. **NodeJS** is an example of a JS platform used for server-side functionality. Server-side functionality includes things such as serving files to clients over the web, connecting to real-time data feeds, talking with databases, and establishing data security.
 
 ## Javascript Console
 
+Like the terminal, but for JavaScript.
 
+**[JSFiddle](http://jsfiddle.net/)** - allows you to run JavaScript code and also share your code snippets with others.
 
-Chrome Console - allows you to type JavaScript code and see some kind of output the code gives you. It is a place to test and debug JS code. Like the terminal, but for JavaScript.
+**Chrome Console** - also a place to test and debug JS code. 
 
 JS statements always end in a semicolon ( ; )
 
