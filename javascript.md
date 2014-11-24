@@ -137,7 +137,7 @@ Think of objects as **things**. A car is an object. A person is an object. Objec
 
 **{key: value}** pairs
 
-- A key can be a single word or multiple words separated by spaces, **but if they're multiple words with spaces they must be in ' ' **.
+- A key can be a single word or multiple words separated by spaces, **but if they use multiple words with spaces they must be in ' '. **
 
 - Objects always use **{ }** and **keys always have a colon (:) immediately after it**
 
