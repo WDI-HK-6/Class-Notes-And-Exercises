@@ -12,15 +12,16 @@ Like the terminal, but for JavaScript.
 
 **Chrome Console** - also a place to test and debug JS code. 
 
-JS statements always end in a semicolon ( ; )
+**JS statements always end in a semicolon ( ; )**
 
-`ex. var firstName = 'Simon';
+`ex. var firstName = 'Simon';`
 
 `console.log();`
 
 Running this statement will output (log) something to your JS console.
 
 `console.log('Hello!');`
+
 `console.log(4+4);`
 
 **Exercise Time!**
@@ -49,7 +50,7 @@ console.log(price);
 
 **Number**: use this if you want to eventually do mathematical operations or comparisons on this value
 
-var price = 25000000; 
+`var price = 25000000;` 
 
 **String**: ALWAYS have ' ' wrapped around them. " " works as well but multiple style guides suggest using ' ' instead.
 
@@ -65,19 +66,24 @@ Should these be numbers or strings?
 
 **Boolean**: either true or false (no quotes)
 
+```javascript
 var hasMoney = false;
 var hasCheeseburger = true;
+```
 
 Will this work?
 
+```javascript
 var hasHair = "true";
 var hasGirlfriend = "false";
+```
 
-Truthy and Falsey
+**Truthy and Falsey**
 
 Some things JS considers False and other things JS considers True.
 
-Falsey
+**Falsey:**
+
 undefined, null, +0, -0, NaN, ''
 
 **Exercise Time! - create variables using the proper syntax for numbers, strings, and booleans**
@@ -117,7 +123,9 @@ classmates1.length; 			// returns 6
 
 ### Objects
 
-Think of objects as **things**. A car is an object. A person is an object. Objects have **properties**, which we call **keys**. The values of those properties / keys are called **values**.
+Think of objects as **things**. A car is an object. A person is an object. Objects have **properties**, which we call **keys**. A **key** point to a **value**.
+
+**Important**: a single **value** isn't always a single piece of data like one number or one string. It can be an entire array or an entire object or even a function.
 
 **{key: value}** pairs
 
