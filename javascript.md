@@ -33,7 +33,7 @@ Whenever you set something using "=" you are **DEFINING** it.
 
 Whenever you put "//" in JS code you are adding a **comment**.
 
-```
+```javascript
 var name = 'Tom Smith';
 console.log(name); 
 // What will be the output?
@@ -53,7 +53,7 @@ var price = 25000000;
 
 **String**: ALWAYS have ' ' wrapped around them. " " works as well but multiple style guides suggest using ' ' instead.
 
-```
+```javascript
 var firstName = 'Tom';
 var lastName = 'Smith';
 var phoneNumber = ???;
@@ -92,7 +92,7 @@ A way to store multiple pieces of data and preserves the order in which they are
 
 Arrays always use **[ ]**
 
-```
+```javascript
 var classmates1 = ['Cassie', 'Clement', 'Dale', 'Dennis', 'Dow', 'Vivienne'];
 
 var classmates2 = ['Cassie', 'Clement', 'Dale', 'Dennis', 'Vivienne', 'Dow'];
@@ -131,7 +131,7 @@ Objects are often also called **"hashes"** (not the same as the # symbol).
 
 **Objects are used for storing single/multiple different properties of a thing or a class of thing.**
  
-```
+```javascript
 var tom = {
 	firstName: 'Tom',
 	lastName: 'Smith',
@@ -175,7 +175,7 @@ var bicycle = {
 
 You grab array values via their index. Indexes always start at 0 for the first item in the array.
 
-```
+```javascript
 var classmates = ['Cassie', 'Clement', 'Dale', 'Dennis', 'Dow', 'Vivienne'];
 
 classmates[1]; // will be the string 'Clement'
@@ -184,7 +184,7 @@ classmates[1]; // will be the string 'Clement'
 
 You grab object values via the key that corresponds to that value.
 
-```
+```javascript
 var person = {
 	firstName: 'Tom',
 	lastName: 'Smith',
@@ -197,7 +197,7 @@ There are two ways to reference a key:
 
 **Dot Notation:**
 
-```
+```javascript
 person.lastName;     // will be the string 'Smith'
 person.age;          // will be the number 25
 person.nick name     // does not work
@@ -206,7 +206,7 @@ person.'nick name'   // does not work
 
 **(Square) Bracket Notation**
 
-```
+```javascript
 person.['lastName'];		// will be the string 'Smith'
 person.['age'];					// will be the number 25
 person.['nick name'];   // will be the string 'Boo'
@@ -216,7 +216,7 @@ person.['nick name'];   // will be the string 'Boo'
 
 ## Mixing Objects into Arrays and Vice Versa
 
-```
+```javascript
 var subaruImpreza = {
 	wheels: 4,
 	passengers: [
