@@ -28,7 +28,7 @@ function() {
 };
 ```
 
-- We put the inputs inside of the **( )** after the function keyword.
+- We put the exact inputs we used inside of the **( )** after the function keyword.
 
 ```javascript
 function(length, width) {	
@@ -64,21 +64,21 @@ var calcRectangleVolume;
 - Start defining your function
 
 ```javascript
-var calcRectangleArea = function(){};
+var calcRectangleVolume = function(){};
 ```
 
 - Gather together the inputs needed and stuff them in.
 
 ```javascript
-var calcRectangleArea = function(length, width, height){
+var calcRectangleVolume = function(length, width, height){
 	
 };
 ```
 
-- Write the body
+- Write the body using the same inputs
 
 ```javascript
-var calcRectangleArea = function(length, width, height){
+var calcRectangleVolume = function(length, width, height){
 	var volume = length * width * height;
 };
 ```
@@ -86,7 +86,7 @@ var calcRectangleArea = function(length, width, height){
 - Make sure to return the output
 
 ```javascript
-var calcRectangleArea = function(length, width, height){
+var calcRectangleVolume = function(length, width, height){
 	var volume = length * width * height;
 	return volume;
 };
@@ -119,7 +119,9 @@ function calcCircumference(radius) {
 
 };
 
-calcCircumference(6); // already loaded into memory
+// gets loaded into memory even when it hasn't been run yet
+
+calcCircumference(6);
 ```
 
 ##Scoping
@@ -127,6 +129,8 @@ calcCircumference(6); // already loaded into memory
 ```JavaScript
 
 var person1 = 'Annie';
+var person2;
+var globalPerson3;
 
 console.log('person1 is ' + person1);
 
@@ -136,12 +140,12 @@ var myFunction = function() {
 	console.log('person1 inside myFunction is ' + person1);
 }
 
-console.log("Before running myFunction:");
+console.log("-----------Before running myFunction--------------");
 
 console.log('person2 was defined inside myFunction but is called outside of it: ' + person2);
 console.log('globalPerson3 was defined inside myFunction but is called outside of it: ' + globalPerson3);
 
-console.log("After running myFunction:");
+console.log("-----------After running myFunction--------------");
 myFunction();
 
 console.log('person2 was defined inside myFunction but is called outside of it: ' + person2);
@@ -204,6 +208,34 @@ alert( differenceInAge(sarah, sam) );
 - one that returns a single value
 - one that returns another object or array
 
+##jQuery
+
+**jQuery** is a JS library that was written to connect the HTML to your JS and vice versa. It has lots of functions for selecting a part of the DOM then grabbing data from the DOM and manipulating the DOM.
+
+**Pattern:**
+
+```javascript
+$('selector').someJqueryFunction();
+$('p');
+$('.class-name');
+$('#id-of-element');
+$('h1 #id-of-element');
+$('article .class-name');
+```
+
+**Common jQuery functions:**
+
+- Listen for an event from the user that will set off a chain of functions that you write:
+
+http://api.jquery.com/category/events/
+
+- Set and Get data from the HTML
+
+http://api.jquery.com/text/
+http://api.jquery.com/data/
+http://api.jquery.com/html/
+http://api.jquery.com/val/
+
 ###Functional Flow
 
 1. Funnel inputs into functions.
@@ -224,6 +256,8 @@ Draw out what you need as inputs, as functions, and as outputs.
 ```javascript
 
 	// Setting variables and inputs --------------------------------------------
+	// Assume you got these values from user input or a form submission.
+
 
 	var item = {
 		name: 'Anvil',
