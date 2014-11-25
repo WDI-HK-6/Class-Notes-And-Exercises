@@ -156,6 +156,46 @@ console.log('globalPerson3 was defined inside myFunction but is called outside o
 
 ##Best Practices
 
+**Create nullipotent functions. Be non-destructive of your inputs. Always return a new object or value.**
+
+http://en.wiktionary.org/wiki/nullipotent - Describing an action which has no side effect. They return useful data, but do not change the data that was used as input.
+
+```javascript
+//bad-------------------------
+
+var sam = {
+	firstName: 'Sam',
+	age: 25
+};
+
+var destructiveFunction = function(person) {
+	person.age = 88;
+};
+
+destructiveFunction(sam);
+
+// sam is now { firstName: 'Sam', age: 88 } in the rest of the code
+
+//good------------------------
+
+var sam = {
+	firstName: 'Sam',
+	age: 25
+};
+
+var goodFunction = function(person) {
+	var newPerson = person;
+	newPerson.age = 88;
+	return newPerson;
+};
+
+goodFunction(sam);
+
+// sam remains the same and does not get changed.
+// The original sam variable is preserved for other functions that require sam
+
+```
+
 **Do not utilize inputs that have not already been defined as one of your arguments.**
 
 ```javascript
