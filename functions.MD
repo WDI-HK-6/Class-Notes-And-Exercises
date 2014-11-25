@@ -49,4 +49,12 @@ var calcRectangleArea = function(length, width) {
 }
 ```
 
-**Exercise - create at least 5 of your own functions**
+**
+Exercise - create at least 5 of your own functions:
+- one that takes no inputs
+- one that takes multiple inputs
+- one that takes an array as an input
+- one that takes an object as an input
+- one that returns a single value
+- one that returns another object or array
+**
