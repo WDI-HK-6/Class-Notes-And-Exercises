@@ -259,6 +259,11 @@ alert( differenceInAge(sarah, sam) );
 **Pattern:**
 
 ```javascript
+// Wait for the DOM to be completely ready.
+// The $ is short for jQuery.
+// Select parts of the DOM and do something to it.
+// (Select - Do Something) pattern
+
 $('selector').someJqueryFunction();
 $('p').someJqueryFunction();
 $('.class-name').someJqueryFunction();
