@@ -224,9 +224,9 @@ person.'nick name'   // does not work
 **(Square) Bracket Notation**
 
 ```javascript
-person.['lastName'];		// will be the string 'Smith'
-person.['age'];					// will be the number 25
-person.['nick name'];   // will be the string 'Boo'
+person['lastName'];		// will be the string 'Smith'
+person['age'];					// will be the number 25
+person['nick name'];   // will be the string 'Boo'
 ```
 
 **Exercise Time! - create objects and arrays and access their values**
