@@ -216,11 +216,11 @@ alert( differenceInAge(sarah, sam) );
 
 ```javascript
 $('selector').someJqueryFunction();
-$('p');
-$('.class-name');
-$('#id-of-element');
-$('h1 #id-of-element');
-$('article .class-name');
+$('p').someJqueryFunction();
+$('.class-name').someJqueryFunction();
+$('#id-of-element').someJqueryFunction();
+$('h1 #id-of-element').someJqueryFunction();
+$('article .class-name').someJqueryFunction();
 ```
 
 **Common jQuery functions:**
@@ -236,7 +236,11 @@ http://api.jquery.com/data/
 http://api.jquery.com/html/
 http://api.jquery.com/val/
 
-###Functional Flow
+**Exercise**
+
+Practice going to websites and using jQuery to select things and get and set their values.
+
+##Functional Flow
 
 1. Funnel inputs into functions.
 2. Run function.
@@ -318,3 +322,4 @@ Draw out what you need as inputs, as functions, and as outputs.
 
 **Exercise:**
 
+Do the shopping cart exercise in Playground.
