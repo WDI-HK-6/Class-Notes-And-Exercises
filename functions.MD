@@ -8,7 +8,7 @@ If you think about it, every action in your life can be broken down just a few t
 
 **Exercise - think about the formula for calculating something - pick one of the ideas and write it into code**
 
-1. Think of the formula.
+- Think of the formula.
 
 ```
 var area = length * width;
@@ -16,7 +16,7 @@ var area = length * width;
 
 We've already got the main body of the function.
 
-2. Let's wrap this inside javascript function syntax;
+- Let's wrap this inside javascript function syntax;
 
 ```javascript
 function() {
@@ -24,7 +24,7 @@ function() {
 }
 ```
 
-3. We put the inputs inside of the **( )** after the function keyword.
+- We put the inputs inside of the **( )** after the function keyword.
 
 ```javascript
 function(length, width) {	
@@ -32,7 +32,7 @@ function(length, width) {
 }
 ```
 
-4. The purpose of making functions is to re-use them. So it needs a name for us to refer to it again in the future.
+- The purpose of making functions is to re-use them. So it needs a name for us to refer to it again in the future.
 
 ```javascript
 var calcRectangleArea = function(length, width) {
@@ -40,7 +40,7 @@ var calcRectangleArea = function(length, width) {
 }
 ```
 
-5. The function needs to return an output, so we add a `return` to the end:
+- The function needs to return an output, so we add a `return` to the end:
 
 ```javascript
 var calcRectangleArea = function(length, width) {
