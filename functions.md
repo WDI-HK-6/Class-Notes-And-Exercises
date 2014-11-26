@@ -2,7 +2,7 @@
 
 ## Setting up Functions
 
-If you think about it, every action in your life can be broken down just a few things:
+If you think about it, every action in your life can be broken down into just a few things:
 
 1. a **procedure or formula** for doing something
 2. the **inputs** required for this procedure to work
@@ -53,6 +53,12 @@ var calcRectangleArea = function(length, width) {
 };
 ```
 
+- We run the function by **calling** it:
+
+```javascript
+calcRectangleArea(5, 6); // returns 30
+```
+
 ### Outside-In Way of Thinking
 
 - Think of a name for your function
@@ -92,9 +98,15 @@ var calcRectangleVolume = function(length, width, height){
 };
 ```
 
-##Two different ways of defining functions
+- We run the function by **calling** it:
 
-1. Best way, only gets loaded into memory when it is called.
+```javascript
+calcRectangleVolume(2, 3, 8); // returns 48
+```
+
+##Two different ways of defining functions 
+
+1. Best way, avoids some weird side effects. http://www.unicodegirl.com/function-statement-versus-function-expression.html
 
 ```javascript
 var calcCircumference = function(radius) {
@@ -105,10 +117,10 @@ var calcCircumference = function(radius) {
 
 };
 
-calcCircumference(6); // gets loaded into memory at this time
+calcCircumference(6);
 ```
 
-2. Not as good, gets loaded into memory from the very beginning.
+2. Not as good. Never declare functions this way if you're inside of a block.
 
 ```javascript
 function calcCircumference(radius) {
@@ -118,8 +130,6 @@ function calcCircumference(radius) {
 	return circumference;
 
 };
-
-// gets loaded into memory even when it hasn't been run yet
 
 calcCircumference(6);
 ```
@@ -252,6 +262,16 @@ alert( differenceInAge(sarah, sam) );
 - one that returns a single value
 - one that returns another object or array
 
+##Objects and Classes
+
+We want to define 
+
+var person = {
+  firstName: "Sam",
+  lastName: "Smith",
+  fullName: function(){ return this.firstName + " " + this.lastName; }
+}
+
 ##jQuery
 
 **jQuery** is a JS library that was written to connect the HTML to your JS and vice versa. It has lots of functions for selecting a part of the DOM then grabbing data from the DOM and manipulating the DOM.
@@ -281,8 +301,11 @@ http://api.jquery.com/category/events/
 - Set and Get data from the HTML
 
 http://api.jquery.com/text/
+
 http://api.jquery.com/data/
+
 http://api.jquery.com/html/
+
 http://api.jquery.com/val/
 
 **Exercise**
@@ -295,7 +318,7 @@ Practice going to websites and using jQuery to select things and get and set the
 2. Run function.
 3. Have function return something new.
 4. Save returned value into a variable.
-5. Use this new variable as the input into another function.
+5. Use this new variable as the input into another function(s).
 6. etc, etc, etc
 
 ##Planning
@@ -368,6 +391,15 @@ Draw out what you need as inputs, as functions, and as outputs.
 	$('#final-price-box').text(totalPrice);
 
 ```
+
+##Real-World Planning Checklist for Solving Function Problems on Websites
+
+1. What's the problem?
+2. What do I need as **inputs** for my function or string of functions?
+3. **How** do I get these **inputs**?
+4. What do I want to **output**?
+5. What **event** needs to trigger all of these functions?
+6. **How** do I write the function(s)?
 
 **Exercise:**
 
