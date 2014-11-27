@@ -1,4 +1,4 @@
-###Morning Exercise - putting it all together - arrays, hashes, loops, functions, functional programming flow
+### Morning Exercise - putting it all together - arrays, hashes, loops, functions, functional programming flow
 ```javascript
 var customer = {
 	firstName: 'Sally',
