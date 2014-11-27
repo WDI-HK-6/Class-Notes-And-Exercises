@@ -1,4 +1,4 @@
-### Morning Exercise - putting it all together - arrays, hashes, loops, functions, functional programming flow
+###Morning Exercise - putting it all together - arrays, hashes, loops, functions, functional programming flow
 ```javascript
 var customer = {
 	firstName: 'Sally',
@@ -64,7 +64,7 @@ var cart = [
 - Make AJAX requests to an outside server
 
 ### Basic jQuery usage
-```
+```javascript
 jQuery(<code>)
 jQuery(document) <- access the DOM
 
@@ -79,7 +79,7 @@ $(document) <- access the DOM
 http://www.w3.org/TR/WD-DOM/introduction.html
 
 ### find h1
-```
+```javascript
 jQuery('h1');
 jQuery('p');
 
@@ -88,24 +88,24 @@ $('p');
 ```
 
 ###After selecting something, jQuery returns your results in an **array**
-```
+```html
 [<p>​…​</p>​, <p class=​"small">​…​</p>​, <p class=​"small">​…​</p>​]  
 ```
 
 ### You can then do stuff with those results with a wide variety of jQuery **methods**, many of which are both **Getters** and **Setters**.
 
 ### finding what’s inside h1 (Getting)
-```
+```javascript
 $('h1').text(); 
 ```
 
 ### change what’s inside h1 (Setting)
-```
+```javascript
 $('h1').text('Changed text'); 
 ```
 ### We need to wait for the DOM to finish loading before we use jQuery
-```
-when the DOM is finished loading, it will actually tell you that it’s ready
+```javascript
+// when the DOM is finished loading, it will actually tell you that it’s ready
 
 jQuery(document).ready(function(){
 		$(“h1”).text(“changed test”);
@@ -121,26 +121,26 @@ jQuery(document).ready(function(){
 
 ### including jQuery into your website
 Download the jQuery library from jQuery website (http://jquery.com/)
-```
+```html
 <script language="javascript" type="text/javascript" src="jquery-2.1.1.js"></script>
 <script src="js/YourExternalJQueryScripts.js"></script>
 ```
 
 ### change all text in `<li>` to the same content
-```
+```javascript
 $(“li”).text(“text changed”);
 ```
 ### select IDs and classes
-```
+```javascript
 $(“.class”);
 $(“#id”);
 ```
 
 ### where to put javascript links?
-- Right before the </body> would be the most ideal!
+- Right before the `</body>` would be the most ideal!
 - Why is that?
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -153,7 +153,7 @@ $(“#id”);
 ```
 
 ### descendent selector
-```
+```html
 <ul class=“courses”>
 	<li></li>
 	<li></li>
@@ -161,7 +161,8 @@ $(“#id”);
 	<li></li>
 	<li></li>
 </ul>
-
+```
+```javascript
 // all descendents
 $(“#courses li”);
 
@@ -178,7 +179,7 @@ $(“#courses li:even”);
 ### traversing
 We don’t want to just use descendent selector. This approach is a little bit faster in the DOM
 
-```
+```javascript
 $(“courses”).find(“li”);
 
 $(“courses”) = selector
@@ -204,7 +205,7 @@ $(“h2.hello”)
 ```
 
 ### Appending to DOM
-```
+```javascript
 // won’t work
 var course = ‘WDI is great’;
 var course = (‘<p>WDI is great</p>’;
@@ -213,7 +214,7 @@ var course = (‘<p>WDI is great</p>’;
 var course = $(‘<p>WDI is great</p>’);
 ```
 
-```
+```javascript
 // four options to append an item to certain location in the web  page
 apple = $(‘<p>Apple</p>’);
 
@@ -231,12 +232,12 @@ apple.appendTo($(‘#fruit’));
 ```
 
 ### Removing from DOM
-```
+```javascript
 $(‘#food’).remove();
 ``` 
 
 ### Interactions
-```
+```javascript
 .on(<event>, <event handler>)
 
 $(document).ready(function(){
@@ -250,7 +251,7 @@ $(document).ready(function(){
 ```
 
 ### Refactor using Traversing
-```
+```javascript
 $(document).ready(function(){
 	$(‘button’).on(‘click’, function(){
 		// what happens when any button is clicked
@@ -269,9 +270,10 @@ $(this).closest(‘.food’).append(apple);
 
 ### Additional data attributes in HTMl and accessible by jQuery
 // additional information
-``` 
+```html
 <li class=“food” data-price=“1.99”>
-
+```
+```javascript
 // reading data
 .data(<name>)
 
@@ -280,13 +282,13 @@ $(this).closest(‘.food’).append(apple);
 ```
 
 ### Event delegation
-```
+```javascript
 $(‘.food button’).on(‘click’, function(){});
 $(‘.food’).on(‘click’, ‘button’, function(){});
 ```
 
 ### Filtering
-```
+```javascript
 // filtering with class
 $(“.food”).filter(‘.edible’);
 
@@ -301,11 +303,11 @@ $(“.food”).filter(‘.edible’);
 
 ### Stop Event Propagation
 Poping up the the top of the page
-```
+```html
 <a href=“#”></a>
 ```
 
-```
+```javascript
 function(event){
 	// prevent default behaviours of the browser
 	event.preventDefault();
@@ -314,14 +316,14 @@ function(event){
 ```
 
 ### updating css
-```
+```javascript
 .css(‘background-color’, ‘red’);
 .show();
 .hide();
 ```
 
 ### Animations
-```
+```javascript
 .slideup()
 .slidedown()
 ```
