@@ -113,7 +113,7 @@ jQuery(document).ready(function(){
 ```
 
 ### exercise
-1. select the element in <span>
+1. select the element in `<span>`
 2. select the element in p
 3. select the text value of h1
 4. change the value inside span
@@ -122,11 +122,11 @@ jQuery(document).ready(function(){
 ### including jQuery into your website
 Download the jQuery library from jQuery website (http://jquery.com/)
 ```
-<script language="javascript" type="text/javascript" src="jquery-1.8.3.js"></script>
+<script language="javascript" type="text/javascript" src="jquery-2.1.1.js"></script>
 <script src="js/YourExternalJQueryScripts.js"></script>
 ```
 
-### change all text in <li> to the same content
+### change all text in `<li>` to the same content
 ```
 $(“li”).text(“text changed”);
 ```
@@ -172,7 +172,7 @@ $(“#courses > li”);
 $(“#courses li:first”);
 $(“#courses li:last”);
 $(“#courses li:odd”);
-$(“#courses li:event”);
+$(“#courses li:even”);
 ```
 
 ### traversing
