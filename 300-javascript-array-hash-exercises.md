@@ -36,11 +36,17 @@ var car = {
 // is there something wrong with this hash? If there is, fix it.
 ```
 With the fixed ```car``` hash:
+
 	- get the brand
-	-  get the brand in another way
+
+	- get the brand in another way
+
 	- get the license plate
-	- get the license plate in another way
-	- get the wheels
-	- get the wheels in another way
+
+	- can the license plate be retrieved in another way?
+
+	- get the number of wheels
+
+	- can the number of wheels be retrieved in another way?
 
 ##Make 3 hashes.
