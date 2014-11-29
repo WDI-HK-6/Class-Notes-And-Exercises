@@ -26,7 +26,7 @@ f(5)
 f(50)
 
 //Circumference of a circle:
-f(x) = 3.1415 * 2 * x
+f(x) = 3.1416 * 2 * x
 
 //What do these return?
 f(4)
@@ -42,6 +42,12 @@ All JavaScript does is:
 
 ```javascript
 //squaring
+
+//algebra
+f(x) = x * x
+
+//javascript
+
 var square = function(x){ return x*x; };
 //OR
 var square = function(x) {
@@ -49,6 +55,12 @@ var square = function(x) {
 };
 
 //circumference of circle
+
+//algebra
+f(x) = 3.1416 * 2 * x
+
+
+//javascript
 var calcCircumerence = function(x) {
   return (3.1416 * 2 * x);
 };
