@@ -106,7 +106,7 @@ You can also do things like use jQuery to post things to the HTML from your resp
       <div class="movie-search col-xs-12">
         <input name="movie-title" type="text" placeholder="Enter Movie Title">
       </div>
-      <h1 class="item-price" data-info="{ 'price': 5, 'sku': '2343tqr' }">HERE</h1>
+      <h1 class="item-price">HERE</h1>
     </div>
     <article>
       <div class="row">
@@ -127,6 +127,7 @@ You can also do things like use jQuery to post things to the HTML from your resp
 
 ```javascript
 $('input[name="movie-title"]').keyup(function(){
+
   var query = $('input[name="movie-title"]').val();
 
   $.ajax({
