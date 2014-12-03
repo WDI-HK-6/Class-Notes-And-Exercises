@@ -80,10 +80,67 @@ $.ajax({
 });
 
 $.ajax({
+  type: "GET",
+  url: "http://www.omdbapi.com/?t=matrix&y=&plot=short&r=json",
+  dataType: "JSON",
+  success: function(response){ 
+    var message = "The movie title is " + response.Title + " and the plot is " + response.Plot + ".";
+    console.log(message);
+  }
+});
+
+$.ajax({
   type: 'GET',
   url: 'https://www.quandl.com/api/v1/datasets/FRED/GDP.json',
   dataType: 'JSON',
   success: function(response){ console.log(response) }
+});
+
+```
+
+You can also do things like use jQuery to post things to the HTML from your response.
+
+```html
+  <div class="container">
+    <div class="row">
+      <div class="movie-search col-xs-12">
+        <input name="movie-title" type="text" placeholder="Enter Movie Title">
+      </div>
+      <h1 class="item-price" data-info="{ 'price': 5, 'sku': '2343tqr' }">HERE</h1>
+    </div>
+    <article>
+      <div class="row">
+        <h1 class="movie-title col-sm-6">
+        </h1>
+      </div>
+      <div class="row">
+        <p class="movie-rating col-xs-12">
+        </p>
+        <p class="movie-actors col-xs-12">
+        </p>
+        <p class="movie-plot col-xs-12">
+        </p>
+      </div>
+    </article>
+  </div>
+```
+
+```javascript
+$('input[name="movie-title"]').keyup(function(){
+  var query = $('input[name="movie-title"]').val();
+
+  $.ajax({
+    type: "GET",
+    url: "http://www.omdbapi.com/?t=" + query + "&y=&plot=short&r=json",
+    dataType: "JSON",
+    success: function(response){ 
+      $('.movie-title').text(response.Title + ' (' + response.Released + ')');
+      $('.movie-actors').text(response.Actors);
+      $('.movie-plot').text(response.Plot);
+      $('.movie-rating').text("IMDB Rating: " + response.imdbRating);
+    }
+  });
+
 });
 ```
 
