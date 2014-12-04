@@ -1,16 +1,12 @@
-#GA WDI API DOCUMENTATION
+#GA WDI - RESTful API DOCUMENTATION
 
-##GET
+##REST
 
-Send a GET request to http://ga-wdi-api.meteor.com/api/posts
+REpresentational State Transfer
 
-Result: 
+A simple **Verb-Path-(Data)** request to a server can be used to manage assets and responses on a properly-configured server.
 
-An array of posts.
-
-```javascript
-[Object, Object, Object, Object, Object, Object]
-```
+![enter image description here](http://i.stack.imgur.com/RyM1b.png)
 
 ##POST
 
@@ -64,4 +60,16 @@ Send a DELETE request to http://ga-wdi-api.meteor.com/api/posts/:_id
 
 ```javascript
 http://ga-wdi-api.meteor.com/api/posts/epfL7Qg6NeH5MBK56
+```
+
+##GET
+
+Send a GET request to http://ga-wdi-api.meteor.com/api/posts
+
+Result: 
+
+An array of all posts.
+
+```javascript
+[Object, Object, Object, Object, Object, Object]
 ```
