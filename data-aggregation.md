@@ -15,3 +15,11 @@ You have a client who wants to be able to easily switch between the following vi
 - Use HighCharts to make a chart of yearly gasoline data.
 
 Feel free to display all data on one chart, so this would mean your series array would have four different hashes.
+
+This will help you a lot:
+
+http://www.w3schools.com/jsref/jsref_obj_date.asp
+
+If you're feeling intrepid, try and use Moment.JS:
+
+http://momentjs.com/
