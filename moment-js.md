@@ -53,7 +53,6 @@ date1.month();
 date.year();
 // 1995
 
-date.
 ```
 
 ###Getting Back a String
