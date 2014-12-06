@@ -6,11 +6,8 @@
 
 Creating new information in the database.
 
-- a form that a user fills out that submits to the server and the database
-
-OR
-
-- the server creates data in its database from some other data source, such as an AJAX request
+- Create a form that gathers user input
+- send a POST request to /api/posts with the data from the form
 
 ```javascript
 $.ajax({
@@ -34,9 +31,8 @@ $.ajax({
 
 Retrieving and displaying existing information from the database.
 
-- a response from the server with the information requested
-
-- a page that displays information from the database
+- Send a GET request that returns data to be displayed on the page
+- Create a page or section that displays the data from the response
 
 ```javascript
 
@@ -78,12 +74,9 @@ $.ajax({
 
 Update existing information in the database.
 
-- find the information that you want to update
-- a form that a user fills out that submits to the server and modifies the existing information
-
-OR
-
-- the server updates data in its database from some other data source, such as an AJAX request
+- Create a method for a user to edit a particular peice of data
+- Create a form that gathers user input for editing that particular data
+- send a POST request to /api/posts/:id with the data from the form
 
 ```javascript
 $.ajax({
