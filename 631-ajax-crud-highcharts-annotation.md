@@ -16,6 +16,8 @@
 					  - create the annotations table
 		          - embed the ```_id``` of each annotation into the annotations table
 
+##Once I have data, I can do stuff.
+
 2. Create - ```submitAnnotation()```
 	- get form contents
 	- modify form contents 
