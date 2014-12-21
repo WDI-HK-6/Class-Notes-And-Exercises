@@ -18,7 +18,7 @@ Post.create(title: 'Riding Horses', content: 'lorem ipsum ')
 
 Note that the code in ```seeds.rb``` isn't magic. It's the exact same code that you would normally type to create new users and posts in your Rails app and Rails console.
 
-***```seeds.rb``` can be run by doing ```rake db:seed``` in the command line (usually done after ```rake db:drop```,.***
+***```seeds.rb``` can be run by doing ```rake db:seed``` in the command line (usually done after ```rake db:drop```.***
 
 ### Example with Relationships
 ```ruby
