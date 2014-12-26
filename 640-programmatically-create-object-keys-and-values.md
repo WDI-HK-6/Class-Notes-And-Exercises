@@ -1,6 +1,6 @@
 #Programmatically Create Object Keys and Values in JavaScript
 
-Object values can be variables, but not object keys.
+Object *values* can be **variables**, but not object *keys*.
 
 Using variables in place of values works:
 ```javascript
